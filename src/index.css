@@ -1,0 +1,46 @@
+h1 {
+  color: black;
+  margin-left: 45%;
+}
+form {
+  background-color: aliceblue;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
+  color: black;
+  width: 700px;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 20px;
+  text-align: center;
+}
+label {
+  width: 100px;
+  display: inline-block;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+form button {
+  width: 20%;
+  height: 30px;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color: rgb(0, 174, 255);
+  border-radius: 10px;
+}
+form button:hover {
+  color: antiquewhite;
+  background-color: rgb(5, 164, 238);
+}
