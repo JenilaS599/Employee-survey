@@ -1,6 +1,6 @@
 h1 {
   color: black;
-  margin-left: 45%;
+  text-align: center;
 }
 form {
   background-color: aliceblue;
@@ -37,7 +37,7 @@ form button {
   font-weight: bold;
   text-align: center;
   color: black;
-  background-color: rgb(0, 174, 255);
+  background-color: rgb(78, 187, 238);
   border-radius: 10px;
 }
 form button:hover {
