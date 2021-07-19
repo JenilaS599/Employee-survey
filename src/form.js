@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import {Link} from "react-router-dom";
 
 class Form extends Component{
 
@@ -19,11 +20,15 @@ class Form extends Component{
        }
     handlesubmit = (event) => {
         event.preventDefault();
+        alert("Thank you for Registering.");
+       }
+       handleLogin =() =>{
+
        }
        render(){
         return(
          <div className="valid-form" >
-           <h1> Login Form</h1>
+           <h1> Employee Registration Form</h1>
           <form onSubmit = {this.handlesubmit} className="form" autoComplete="off">
             <ul>
            <label> Emp Id : </label>
@@ -71,8 +76,15 @@ class Form extends Component{
             value= {this.state.mail}
             onChange={this.handlechangeall} /> <br/><br/>
           </ul>
-       
-           <button type="submit" value="Login" id="button">Login</button>
+           <button type="submit" value="Register" id="button">Register</button>
+       <br/><br/>
+          <h3>If you are submitting the survey, please
+           <span>  </span>   
+          <Link to="/employees">
+            <button>Login</button>
+          </Link>
+          <span> here. </span>   
+          </h3>
           </form>
          </div>
         )
