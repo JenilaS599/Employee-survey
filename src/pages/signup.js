@@ -83,7 +83,7 @@ class Signup extends Component{
             placeholder="Enter Password" 
             onChange={this.handlechangeall}/>
           </ul>
-           <button type="submit" value="Register" id="button">Register</button>
+           <button type="submit" value="Register" id="button">Sign up</button>
        <br/><br/>
           </form>
          </div>
