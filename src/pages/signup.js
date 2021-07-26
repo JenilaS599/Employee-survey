@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import '../index.css';
 import {Link} from "react-router-dom";
 import Navbar from './navbar';
@@ -14,6 +15,7 @@ class Signup extends Component{
          company:"",
          role:"",
          mail: "",
+         password:""
       }
     }
     handlechangeall = (event) =>{
@@ -21,15 +23,36 @@ class Signup extends Component{
        }
     handlesubmit = (event) => {
         event.preventDefault();
+        const employee ={
+            empid: this.state.empid,
+         name:this.state.name,
+         company:this.state.company,
+         role:this.state.role,
+         password: this.state.password,
+         email: this.state.mail,
+        };
+        console.log(employee);
+
+        axios.post('http://localhost:5000/employees/add/',employee)
+        .then(res => console.log(res.data));
+
         alert("Thank you for Registering.");
-       }
-       handleLogin =() =>{
+
+        this.setState({  
+          empid: "",
+          name:"",
+          company:"",
+          role:"",
+          mail: "",
+          password:""
+       })
 
        }
+
        render(){
         return(
          <div className="valid-form" >
-            <Navbar/>
+           <Navbar/>
            <h1> Employee Registration Form</h1>
           <form onSubmit = {this.handlesubmit} className="form" autoComplete="off">
             <ul>
@@ -85,7 +108,7 @@ class Signup extends Component{
             placeholder="Enter Password" 
             onChange={this.handlechangeall}/>
           </ul>
-           <button type="submit" value="Register" id="button">Sign up</button>
+           <button type="submit" value="Register" id="button">Register</button>
        <br/><br/>
           </form>
          </div>
