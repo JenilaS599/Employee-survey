@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
+import {Link} from "react-router-dom";
 
 class Signin extends Component{
 
@@ -41,7 +42,9 @@ class Signin extends Component{
             placeholder="Enter Password" 
             onChange={this.handlechangeall}/>
           </ul>
-           <button type="submit" value="Register" id="button">Sign in</button>
+           <button type="submit" value="Register" id="button">
+                 <Link to="/employees/">Sign in</Link>
+           </button>
        <br/><br/>
           </form>
          </div>
