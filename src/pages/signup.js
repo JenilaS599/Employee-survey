@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 import {Link} from "react-router-dom";
+import Navbar from './navbar';
 
 class Signup extends Component{
 
@@ -28,6 +29,7 @@ class Signup extends Component{
        render(){
         return(
          <div className="valid-form" >
+            <Navbar/>
            <h1> Employee Registration Form</h1>
           <form onSubmit = {this.handlesubmit} className="form" autoComplete="off">
             <ul>
