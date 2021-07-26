@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 import {Link} from "react-router-dom";
+import Navbar from './navbar';
 
 class Signin extends Component{
 
@@ -25,6 +26,7 @@ class Signin extends Component{
        render(){
         return(
          <div className="valid-form" >
+              <Navbar/>
            <h1>Sign in</h1>
           <form onSubmit = {this.handlesubmit} className="form" autoComplete="off">
             <ul> 
