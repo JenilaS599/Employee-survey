@@ -79,9 +79,15 @@ form button:hover {
   color: antiquewhite;
   background-color: rgb(5, 164, 238);
 }
-
+table{
+            width: 90%;
+            margin: auto;
+        }
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
+}
+.table-head{
+    text-align: center;
 }
