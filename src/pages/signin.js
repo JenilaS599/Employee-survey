@@ -44,9 +44,10 @@ class Signin extends Component{
             placeholder="Enter Password" 
             onChange={this.handlechangeall}/>
           </ul>
-           <button type="submit" value="Register" id="button">
-                 <Link  class="signin-btn" to="/employees/">Sign in</Link>
-           </button>
+                 <Link  class="signin-btn" to="/employees/">
+                 <button type="submit" value="Register" id="button">
+                   Sign in</button></Link>
+           
        <br/><br/>
           </form>
          </div>
