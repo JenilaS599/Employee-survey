@@ -25,13 +25,9 @@ export default function Employees() {
         <div>
             {EmployeeData? (EmployeeData.map((EmployeeData) =>{
                 return(
-                    <div>
-//                         <h3>{EmployeeData.name}
-//                         {EmployeeData.empid}
-//                         {EmployeeData.role}
-//                         {EmployeeData.company}
-//                         </h3>
-                    <table>
+          <div>
+              <h1 class="table-head">List of Employees</h1>
+      <table>
         <tr>
             <th>Employee Name</th>
             <th>Employee Id</th>
