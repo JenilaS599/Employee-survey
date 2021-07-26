@@ -25,12 +25,26 @@ export default function Employees() {
             {EmployeeData? (EmployeeData.map((EmployeeData) =>{
                 return(
                     <div>
-                        <h3>{EmployeeData.name}
-                        {EmployeeData.empid}
-                        {EmployeeData.role}
-                        {EmployeeData.company}
-                        </h3>
-                        </div>
+//                         <h3>{EmployeeData.name}
+//                         {EmployeeData.empid}
+//                         {EmployeeData.role}
+//                         {EmployeeData.company}
+//                         </h3>
+                    <table>
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+            <th>Role</th>
+            <th>Company Name</th>
+        </tr>
+        <tr>
+            <th>{EmployeeData.name}</th>
+            <th>{EmployeeData.empid}</th>
+            <th>{EmployeeData.role}</th>
+            <th>{EmployeeData.company}</th>
+        </tr>
+    </table>
+   </div>
                 );
             })):(
                 <span></span>
