@@ -35,10 +35,10 @@ export default function Employees() {
             <th>Company Name</th>
         </tr>
         <tr>
-            <th>{EmployeeData.name}</th>
-            <th>{EmployeeData.empid}</th>
-            <th>{EmployeeData.role}</th>
-            <th>{EmployeeData.company}</th>
+            <td>{EmployeeData.name}</td>
+            <td>{EmployeeData.empid}</td>
+            <td>{EmployeeData.role}</td>
+            <td>{EmployeeData.company}</td>
         </tr>
     </table>
    </div>
